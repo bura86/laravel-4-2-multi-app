@@ -1,0 +1,54 @@
+{
+	"name": "laravel/laravel",
+	"description": "The Laravel Framework.",
+	"keywords": ["framework", "laravel"],
+	"license": "MIT",
+	"require": {
+		"laravel/framework": "4.2.*"
+	},
+	"autoload": {
+		"classmap": [
+			"apps/blog/commands",
+      "apps/blog/controllers",
+      "apps/blog/database/migrations",
+      "apps/blog/database/seeds",
+      "apps/blog/tests/TestCase.php",
+      "apps/admin/commands",
+      "apps/admin/controllers",
+      "apps/admin/database/migrations",
+      "apps/admin/database/seeds",
+      "apps/admin/tests/TestCase.php",
+      "apps/classes"
+		]
+	},
+	"scripts": {
+		"post-install-cmd": [
+      "php apps/admin/artisan optimize"
+    ],
+    "pre-update-cmd": [
+      "php apps/admin/artisan clear-compiled"
+    ],
+    "post-update-cmd": [
+      "php apps/admin/artisan optimize"
+    ],
+    "post-create-project-cmd": [
+      "php apps/admin/artisan key:generate"
+    ],
+    "post-install-cmd": [
+      "php apps/blog/artisan optimize"
+    ],
+    "pre-update-cmd": [
+      "php apps/blog/artisan clear-compiled"
+    ],
+    "post-update-cmd": [
+      "php apps/blog/artisan optimize"
+    ],
+    "post-create-project-cmd": [
+      "php apps/blog/artisan key:generate"
+    ]
+	},
+	"config": {
+		"preferred-install": "dist"
+	},
+	"minimum-stability": "stable"
+}
