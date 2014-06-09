@@ -1,14 +1,14 @@
 {
-	"name": "laravel/laravel",
-	"description": "The Laravel Framework.",
-	"keywords": ["framework", "laravel"],
-	"license": "MIT",
-	"require": {
-		"laravel/framework": "4.2.*"
-	},
-	"autoload": {
-		"classmap": [
-			"apps/blog/commands",
+  "name": "laravel/laravel",
+  "description": "The Laravel Framework.",
+  "keywords": ["framework", "laravel"],
+  "license": "MIT",
+  "require": {
+    "laravel/framework": "4.2.*"
+  },
+  "autoload": {
+    "classmap": [
+      "apps/blog/commands",
       "apps/blog/controllers",
       "apps/blog/database/migrations",
       "apps/blog/database/seeds",
@@ -19,10 +19,10 @@
       "apps/admin/database/seeds",
       "apps/admin/tests/TestCase.php",
       "apps/classes"
-		]
-	},
-	"scripts": {
-		"post-install-cmd": [
+    ]
+  },
+  "scripts": {
+    "post-install-cmd": [
       "php apps/admin/artisan optimize"
     ],
     "pre-update-cmd": [
@@ -46,9 +46,9 @@
     "post-create-project-cmd": [
       "php apps/blog/artisan key:generate"
     ]
-	},
-	"config": {
-		"preferred-install": "dist"
-	},
-	"minimum-stability": "stable"
+  },
+  "config": {
+    "preferred-install": "dist"
+  },
+  "minimum-stability": "stable"
 }
