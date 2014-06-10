@@ -14,6 +14,7 @@ composer install
 ```
 
 
+
 ### Application update ###
 **laravel-4-2-multi-app** is currently setup for two applications: *blog* and *admin*. There are two folders inside of apps folder, for each app.
 Models are extracted outside of both applications since they are the same for blog and admin, which use the same database.
@@ -31,6 +32,7 @@ In order to enable laravel to work properly don't forget to edit storage permiss
 chmod -R 775 $MY_APP_PATH/laravel-4-2-multi-app/apps/blog/storage
 chmod -R 775 $MY_APP_PATH/laravel-4-2-multi-app/apps/admin/storage
 ```
+
 
 
 
