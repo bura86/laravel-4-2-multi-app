@@ -26,7 +26,9 @@ If there's a need to use some different models, not the common ones in *apps/cla
 
 #### Note ####
 Every time you add a new class, rename the existing one, change the file structure or add/change the namespace you'll have to update the composer by running `composer update` command.
-In order to enable laravel to work properly don't forget to edit storage permissions: `chmod -R 775 $MY_APP_PATH/laravel-4-2-multi-app/apps/blog/storage`
+In order to enable laravel to work properly don't forget to edit storage permissions: 
+`chmod -R 775 $MY_APP_PATH/laravel-4-2-multi-app/apps/blog/storage`
+`chmod -R 775 $MY_APP_PATH/laravel-4-2-multi-app/apps/admin/storage`
 
 
 
