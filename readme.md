@@ -2,14 +2,14 @@
 
 ### Installation
 ***Clone git repository***
-
-`git clone https://github.com/bura86/laravel-4-2-multi-app.git`
+```javascript
+git clone https://github.com/bura86/laravel-4-2-multi-app.git
 
 ***Download Dependencies***
-
-`cd  laravel-4-2-multi-app
-
-composer install`
+```javascript
+cd  laravel-4-2-multi-app
+composer install
+```
 
 
 ### Application update ###
