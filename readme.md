@@ -31,5 +31,7 @@ In order to enable laravel to work properly don't forget to edit storage permiss
 
 
 ### Usage examples ###
-Application structure like this requires a namespace usage to differentiate one app from another. There are some example files in the code so you could see what is all about.
-In the *apps/blog/routes.php* and *apps/admin/routes.php* files there are already some paths specified to show how to use controllers, models and some general classes in the application.
+Application structure like this requires a namespace usage to differentiate one app from another. If you want to use some class without namespace then you have to call that class with "\" prefix which tells to laravel to look in the global namespace. There are some example files in the code so you could see what is all about.
+In the *apps/blog/routes.php* and *apps/admin/routes.php* files there are already some paths specified to show how to use controllers, models and some general classes in the application. Also you have a test classes in *apps/classes* and *apps/classes/models* folders just to see how access these files from the controller.
+
+Enjoy :)
