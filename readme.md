@@ -1,6 +1,7 @@
 ## Laravel 4.2 multi app setup
 
-### Installation
+
+### Installation ###
 ***Clone git repository***
 ```javascript
 git clone https://github.com/bura86/laravel-4-2-multi-app.git
@@ -21,3 +22,14 @@ All model classes are located inside of *apps/classes/models* folder.
 In order to extend the project with more applications you'll have to add another folder inside of *apps* folder and update **composer.json** file with additional paths.
 Add paths based on the current ones.
 
+If there's a need to use some different models, not the common ones in *apps/classes/models*, then you'll have to configure model paths in */myAppName/start/global.php* file.
+
+#### Note ####
+Every time you add a new class, rename the existing one, change the file structure or add/change the namespace you'll have to update the composer by running `composer update` command.
+In order to enable laravel to work properly don't forget to edit storage permissions: `chmod -R 775 $MY_APP_PATH/laravel-4-2-multi-app/apps/blog/storage`
+
+
+
+### Usage examples ###
+Application structure like this requires a namespace usage to differentiate one app from another. There are some example files in the code so you could see what is all about.
+In the *apps/blog/routes.php* and *apps/admin/routes.php* files there are already some paths specified to show how to use controllers, models and some general classes in the application.
