@@ -4,6 +4,7 @@
 ***Clone git repository***
 ```javascript
 git clone https://github.com/bura86/laravel-4-2-multi-app.git
+```
 
 ***Download Dependencies***
 ```javascript
