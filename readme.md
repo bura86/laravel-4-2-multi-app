@@ -1,7 +1,16 @@
 ## Laravel 4.2 multi app setup
 
+### Application requirements ###
+Laravel requires the following packages in order to work properly: php5-fpm, php5-cli, php5-mcrypt. We'll show here how to install it on nginx server.
+```javascript
+sudo apt-get update && apt-get upgrade
+sudo apt-get install php5-fpm php5-cli php5-mcrypt
+sudo php5enmod mcrypt
+```
+
 
 ### Installation ###
+
 ***Clone git repository***
 ```javascript
 git clone https://github.com/bura86/laravel-4-2-multi-app.git
@@ -12,7 +21,6 @@ git clone https://github.com/bura86/laravel-4-2-multi-app.git
 cd  laravel-4-2-multi-app
 composer install
 ```
-
 
 
 ### Application update ###
@@ -29,10 +37,11 @@ If there's a need to use some different models, not the common ones in *apps/cla
 Every time you add a new class, rename the existing one, change the file structure or add/change the namespace you'll have to update the composer by running `composer update` command.
 In order to enable laravel to work properly don't forget to edit storage permissions: 
 ```javascript
+chgrp -R www-data $MY_APP_PATH/laravel-4-2-multi-app
+
 chmod -R 775 $MY_APP_PATH/laravel-4-2-multi-app/apps/blog/storage
 chmod -R 775 $MY_APP_PATH/laravel-4-2-multi-app/apps/admin/storage
 ```
-
 
 
 
