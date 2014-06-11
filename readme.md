@@ -1,5 +1,6 @@
 ## Laravel 4.2 multi app setup
 
+
 ### Application requirements ###
 Laravel requires the following packages in order to work properly: php5-fpm, php5-cli, php5-mcrypt. We'll show here how to install it on nginx server.
 ```javascript
